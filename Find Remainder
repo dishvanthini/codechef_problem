@@ -1,0 +1,14 @@
+//Write a program to find the remainder when an integer A is divided by an integer B.
+#include <stdio.h>
+
+int main() {
+	int t,a,b;
+	scanf("%d",&t);
+	
+	while(t--){
+	    scanf("%d %d",&a,&b);
+	    printf("%d\n",a%b);
+	}
+return 0;
+}
+
