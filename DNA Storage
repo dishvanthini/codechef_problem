@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int t;
+    scanf("%d", &t);
+
+    while (t--) {
+        int n;
+        scanf("%d", &n); 
+        char s[n + 1];   
+        scanf("%s", s);
+
+        char ans[3]; 
+
+        for (int i = 0; i < n; i += 2) {
+            strncpy(ans, &s[i], 2); 
+            ans[2] = '\0'; // last value is null 
+
+            if (strcmp(ans, "00") == 0) {
+                printf("A");
+            } else if (strcmp(ans, "01") == 0) {
+                printf("T");
+            } else if (strcmp(ans, "10") == 0) {
+                printf("C");
+            } else if (strcmp(ans, "11") == 0) {
+                printf("G");
+            }
+        }
+        printf("\n"); // Move to the next line after each test case
+    }
+
+    return 0;
+}
+
+
+
+/*DNA Storage
+For encoding an even-length binary string into a sequence of A, T, C, and G, we iterate from left to right and replace the characters as follows:
+
+00 is replaced with A
+01 is replaced with T
+10 is replaced with C
+11 is replaced with G*/
