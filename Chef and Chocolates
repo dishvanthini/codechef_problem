@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
     int t,five ,ten,tot ;
     scanf("%d", &t);
@@ -14,3 +13,4 @@ int main() {
     }
 
 }
+//Chef has X 5 rupee coins and Y 10 rupee coins. Chef goes to a shop to buy chocolates for Chefina where each chocolate costs Z rupees. Find the maximum number of chocolates that Chef can buy for Chefina.
