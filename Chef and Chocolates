@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int t,five ,ten,tot ;
+    scanf("%d", &t);
+
+    while (t--) {
+       int x, y, z;
+       scanf("%d %d %d", &x, &y, &z);
+       five=5*x;//
+       ten=y*10;
+       tot=five+ten;
+       printf("%d\n",tot/z);
+    }
+
+}
