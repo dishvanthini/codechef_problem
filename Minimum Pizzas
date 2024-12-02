@@ -1,0 +1,16 @@
+/*Minimum Pizzas Each pizza consists of 4 slices. There are N friends and each friend needs exactly X slices.*/
+
+#include <stdio.h>
+
+int main() {
+	int T,x,y,res;
+	scanf("%d",&T);
+	while(T--){
+    scanf("%d %d",&x,&y);
+    
+    res=x*y;
+    printf("%d\n",(res+3)/4);
+	}
+	return 0;
+}
+
